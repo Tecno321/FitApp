@@ -15,6 +15,8 @@ export class IniciarSesionPage implements OnInit {
   principio: any={
     nombre:"",
     email:"",
+    contrasena:"",
+    confiContrasena:"",
     telefono:"" 
   }
 

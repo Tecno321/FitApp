@@ -22,7 +22,11 @@ const routes: Routes = [
   {
     path: 'iniciar-sesion',
     loadChildren: () => import('./page/iniciar-sesion/iniciar-sesion.module').then( m => m.IniciarSesionPageModule)
+  },  {
+    path: 'recuperar-contrasena',
+    loadChildren: () => import('./page/recuperar-contrasena/recuperar-contrasena.module').then( m => m.RecuperarContrasenaPageModule)
   },
+
 ];
 
 @NgModule({
