@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>crearUsuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion.padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Registro de Usuario</ion-card-title>      
+    </ion-card-header>  
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-input label="Nombre" labelPlacement="floating" placeholder="Ingrese Nombre"
+           [(ngModel)] = "usuario.nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input label="Email" labelPlacement="floating" type="email" placeholder="email@domain.com"
+           [(ngModel)] = "usuario.email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input label="Contraseña" labelPlacement="floating" type="password" 
+          placeholder="Ingrese Contraseña" [(ngModel)] = "usuario.contrasena"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input label="Confirmar Contraseña" labelPlacement="floating" type="password" 
+          placeholder="Confirme Contraseña" [(ngModel)] = "usuario.confiContrasena"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input label="Telefono" labelPlacement="floating" type="tel" placeholder="9 0000 0000" 
+          [(ngModel)] = "usuario.telefono"></ion-input>
+        </ion-item> 
+        <br>
+          <ion-button expand="block" (click)="crearUsuario()">CREAR USUARIO</ion-button>
+        <br>     
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
